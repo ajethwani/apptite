@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "82150914259",
-    "firebase_url": "https://funshoppers-b6158.firebaseio.com",
-    "project_id": "funshoppers-b6158",
-    "storage_bucket": "funshoppers-b6158.appspot.com"
+    "project_number": "104457852620",
+    "firebase_url": "https://funshoppers-5b347.firebaseio.com",
+    "project_id": "funshoppers-5b347",
+    "storage_bucket": "funshoppers-5b347.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:82150914259:android:1f53e749350dcbcc",
+        "mobilesdk_app_id": "1:104457852620:android:1f53e749350dcbcc",
         "android_client_info": {
           "package_name": "com.ateam.funshoppers"
         }
       },
       "oauth_client": [
         {
-          "client_id": "82150914259-4iebblv83p8pqbbb5lrom020oj9lg7as.apps.googleusercontent.com",
+          "client_id": "104457852620-v6ueu242dn0bt3jifihnb24le4n4rafn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAGfEgzVeaynWv2eJ--_6fimyfB3OBwhmQ"
+          "current_key": "AIzaSyAWypwDnjQ5RGfve7zZl2xiKZ-xl-WEAK8"
         }
       ],
       "services": {
