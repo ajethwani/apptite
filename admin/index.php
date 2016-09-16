@@ -17,7 +17,7 @@
 
 
 
-<form method="POST" action="checklogin.php">
+<form method="POST" action="admin_login.php">
 <ul>
 <li>
 <span class="un"><i class="fa fa-user"></i></span><input type="text" required class="text" name="email" placeholder="Email" id="login-user"></li>

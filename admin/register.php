@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
 
@@ -17,15 +18,19 @@
 
 
 
-<form method="POST" action="checklogin.php">
+<div>
 <ul>
 <li>
-<span class="un"><i class="fa fa-user"></i></span><input type="email" required class="text" name="email" placeholder="EmailId" id="login-user" autocomplete="off"></li>
+<span class="un"><i class="fa fa-user"></i></span><input type="email" required class="text email_id" name="email" placeholder="EmailId" id="login-user"  ></li>
 <li>
-<button type="submit" name="register" class="btn">Register</button>
+<button type="submit" name="register" class="btn btn_register">Register</button>
+<br>
+<div class="result" style="color:white;text-align:center">
+   <img class="loader" src="assets/image/hourglass.svg">
+</div>
 </li>
 </ul>
-</form>
+</div>
 
 
 
@@ -33,4 +38,29 @@
 </div><br>
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('.loader').hide();
+  $('.btn_register').click(function(){
+      $('.loader').show();
+    var email=$('.email_id').val();
+    $.ajax({
+                    type: 'POST',
+                    url: 'api/admin_reg.php',
+                    data:{
+                        email:email
+                        },
+                    success: function(data) {
+                        $('.loader').hide();
+                        $('.result').html(data);
+                    }
+                });
+  });
+});
+</script>
+
+
 </body></html>
